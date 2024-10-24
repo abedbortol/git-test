@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    body { 
+      width: 100vw;
+      height: 100vh;
+      background-color:  hsl(0, 0%, 8%);
+      color: white;
+    }
+    .container {
+      position: relative;
+      margin: 10vh auto;
+      width:max-content;
+      background-color: hsl(0, 0%, 12%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 75px;
+    }
+
+    h1 { 
+      margin-bottom: 0px;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    h4 {
+      margin-top: 5px;
+      color:  hsl(75, 94%, 57%);
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal; 
+      font-size: 14px; 
+    }
+
+    button {
+      background-color:hsl(0, 0%, 20%);
+      border: 0px;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 8px;
+      color: white;
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    button:hover {
+      background-color:hsl(75, 94%, 57%);
+      color: black;
+      cursor: url('https://img.icons8.com/ios-filled/25/1A1A1A/finger-and-thumb.png'),pointer;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+<img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall picture">
+<h1>Jessica Randall</h1>
+<h4>London, United Kingdom</h4>
+<p>"Front-end developer and avid reader."</p>
+<button>GitHub</button>
+<button>Frontend Mentor</button>
+<button>LinkedIn</button>
+<button>Twitter</button>
+<button>Instagram</button>
+</div>
+<script>
+var i = document.querySelector("p").offsetWidth;
+for(var j = 0; j < 5; j++)
+{
+document.querySelectorAll("button")[j].style.width = i + 40 + "px";
+}
+</script>
+</body>
+</html>
